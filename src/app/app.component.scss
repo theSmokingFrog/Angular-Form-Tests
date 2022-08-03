@@ -1,0 +1,54 @@
+:host {
+    display:               grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:       1rem;
+    min-height:            90vh;
+    font-family:           "Roboto Mono";
+}
+
+.container {
+    border:  1px dashed grey;
+    height:  100%;
+    padding: 1rem
+}
+
+form {
+    > * {
+        display:       block;
+        width:         100%;
+        margin-bottom: .25rem;
+    }
+
+    > input, > textarea {
+        margin-bottom: 1rem;
+    }
+}
+
+button {
+    display:       block;
+    width:         100%;
+    font-size:     1rem;
+    margin-bottom: 1rem;
+    font-family:   "Roboto Mono";
+}
+
+
+ul.states {
+    li {
+        span {
+            background:     black;
+            border-radius:  50rem;
+            padding:        0 .5rem;
+            text-transform: uppercase;
+            color:          white;
+
+            &.true {
+                background: seagreen;
+            }
+
+            &.false {
+                background: crimson;
+            }
+        }
+    }
+}
